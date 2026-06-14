@@ -1,0 +1,2 @@
+node .husky/add-emoji-to-commit.ts "$1"
+pnpm dlx commitlint --edit "$1"
