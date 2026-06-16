@@ -4,16 +4,19 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "doppler run -- varlock run -- next dev",
+    "start": "doppler run -- varlock run -- next start",
     "build": "next build",
-    "start": "next start",
     "lint": "eslint",
     "prepare": "husky"
   },
   "dependencies": {
+    "@varlock/doppler-plugin": "^1.1.0",
+    "@varlock/nextjs-integration": "^1.1.3",
     "next": "16.2.9",
     "react": "19.2.7",
-    "react-dom": "19.2.7"
+    "react-dom": "19.2.7",
+    "varlock": "^1.6.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.2",
