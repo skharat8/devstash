@@ -72,6 +72,7 @@ Example v4 configuration:
 - Use shadcn/ui components where applicable
 - No inline styles
 - Dark mode first, light mode as option
+- Use Prettier to format the edited files at the end
 
 ## Database
 
