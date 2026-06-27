@@ -34,7 +34,9 @@ We will create a new branch for every feature/fix. Name branch **feature/[featur
 - Ask before committing (don't auto-commit)
 - Use conventional commit messages (feat:, fix:, chore:, docs:, etc.)
 - Keep commits focused (one feature/fix per commit)
-- Never put "Generated With Claude" in the commit messages
+- Don't add low-level details about how the feature was implemented in the message
+
+**CRITICAL**: NEVER put "Co-Authored-By" field in the commit message.
 
 ## When Stuck
 
