@@ -61,7 +61,7 @@ Example v4 configuration:
 ## Naming
 
 - Components: PascalCase (`ItemCard.tsx`)
-- Files: Match component name or kebab-case
+- Files: Match component name or kebab-case. For hooks, match function name.
 - Functions: camelCase
 - Constants: SCREAMING_SNAKE_CASE
 - Types/Interfaces: PascalCase (no prefix)
@@ -72,7 +72,8 @@ Example v4 configuration:
 - Use shadcn/ui components where applicable
 - No inline styles
 - Dark mode first, light mode as option
-- Use Prettier to format the edited files at the end
+
+**CRITICAL**: Run Prettier on every file after edit
 
 ## Database
 

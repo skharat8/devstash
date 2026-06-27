@@ -30,6 +30,7 @@ This creates context switching, lost knowledge, and inconsistent workflows. DevS
   Collects patterns, boilerplates, API examples.
 
 ## Features
+
 Here is a list of features for DevStash.
 
 A. **Items/Item Types**

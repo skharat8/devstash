@@ -1,5 +1,5 @@
-import type { NextConfig } from "next";
 import { varlockNextConfigPlugin } from "@varlock/nextjs-integration/plugin";
+import type { NextConfig } from "next";
 
 const withVarlock = varlockNextConfigPlugin();
 

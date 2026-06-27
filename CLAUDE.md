@@ -29,6 +29,7 @@ No test runner is configured yet.
 ## Dependency policy
 
 `pnpm-workspace.yaml` enforces supply-chain guardrails that affect adding/updating deps:
+
 - `minimumReleaseAge: 4320` — packages must be at least 3 days old before install.
 - `trustPolicy: no-downgrade` — version downgrades are blocked (with a few explicit exclusions listed in the file).
 - `allowBuilds` gates which packages may run install scripts (`sharp`, `unrs-resolver`).
