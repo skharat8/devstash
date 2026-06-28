@@ -6,12 +6,21 @@
   "scripts": {
     "dev": "doppler run -- varlock run -- next dev",
     "start": "doppler run -- varlock run -- next start",
-    "build": "next build",
+    "build": "doppler run -- varlock run -- prisma generate && doppler run -- varlock run -- next build",
     "lint": "eslint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "postinstall": "doppler run -- varlock run -- prisma generate",
+    "db:generate": "doppler run -- varlock run -- prisma generate",
+    "db:migrate": "doppler run -- varlock run -- prisma migrate dev",
+    "db:deploy": "doppler run -- varlock run -- prisma migrate deploy",
+    "db:studio": "doppler run -- varlock run -- prisma studio",
+    "db:test": "doppler run -- varlock run -- tsx scripts/test-db.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
+    "@neondatabase/serverless": "^1.1.0",
+    "@prisma/adapter-neon": "^7.8.0",
+    "@prisma/client": "^7.8.0",
     "@varlock/doppler-plugin": "^1.1.0",
     "@varlock/nextjs-integration": "^1.1.3",
     "class-variance-authority": "^0.7.1",
@@ -43,7 +52,9 @@
     "prettier-plugin-classnames": "^0.10.2",
     "prettier-plugin-merge": "^0.10.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
+    "prisma": "^7.8.0",
     "tailwindcss": "^4",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   }
 }
